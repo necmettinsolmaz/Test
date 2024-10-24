@@ -1,0 +1,13 @@
+ if (cagriBilgileri.getCallType() == EnumCallType.TO_APP.getValue() && hasArayanNumara) {
+			cagriBilgileriTableItem.setImageIcon(gelenAramaIcon, 5);
+		    } else {
+			if (cagriBilgileri.getCallType() == null || cagriBilgileri.getCallType() == 0) {
+			    cagriBilgileriTableItem.setImageIcon(gelenAramaIcon, 5);
+			} else {
+			    if (cagriBilgileri.getCagriZamani() == null) {
+                                cagriBilgileriTableItem.setImageIcon(gidenCevapsizIcon, 5);
+                            } else {
+                                cagriBilgileriTableItem.setImageIcon(gidenAramaIcon, 5);
+                            }
+			}
+		    }
